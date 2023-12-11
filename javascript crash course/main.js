@@ -407,10 +407,50 @@ const persona = {
 }
 console.log(persona.salute())
 
-//JSON
-
-{
- "name": "John Doe",
- "age": 20,
- "email" 
+const someOne = {
+  "name": "John Doe",
+  "age": 20,
+  "email":"js@gmail.com",
+  "isSubscribed": true,
+  "hobbies": ["Reading","singing", "coding"],
+  "address": {
+      "city": "New York",
+      "idk": true
+  }
 }
+const jsonString = JSON.
+stringify(someOne)
+const parsedObject = JSON.parse(jsonString)
+console.log(jsonString);
+console.log(parsedObject)
+
+//Working with date and time in javascript
+
+//const currentDate = new Date()
+//console.log(currentDate)
+
+//year, month, day, hours, minutes, seconds, milliseconds
+
+
+//const currentDate = new Date(2023, 12, 11, 3, 18, 32, 09)
+//console.log(currentDate)
+const date = new Date();
+
+const year = date.getFullYear();
+const month = date.getMonth();
+//const days = date.getDays()
+const hour = date.getHours()
+const minute = date.getMinutes();
+const seconds = date.getSeconds()
+
+
+console.log(`Year: ${year}`);
+console.log(`Month: ${month}`);
+console.log(`Hour: ${hour}`);
+console.log(`Minute: ${minute}`)
+console.log(`Seconds: ${seconds}`)
+console.log(date.toDateString)
+
+date.setDate(date.getDate() + 1)
+console.log(date)
+//etc
