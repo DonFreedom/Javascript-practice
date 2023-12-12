@@ -454,3 +454,83 @@ console.log(date.toDateString)
 date.setDate(date.getDate() + 1)
 console.log(date)
 //etc
+
+
+//SetInterval
+
+//setTimeout
+
+setTimeout(function (){
+  console.log(`This function will be executed after 3 seconds`)
+}, 3000);
+
+
+
+
+/*function double(number){
+  return number * 2;
+}
+console.log(double(3))*/
+//now using an arrow function we have 
+
+const double = n => n * 2;
+console.log(double(12))
+
+const lib ={
+  sum: function(a, b){
+    return a + b
+  },
+  mult: function(a, b){
+    return a * b
+  }
+}
+console.log(lib.sum(3, 4));
+console.log(lib.mult(3, 7))
+//now using the ES6 method
+
+/*const double = n => n * 2;
+console.log(double(12))
+
+const lib = {
+  sum: (a, b)=> a + b,
+  mult:(a, b)=> a * b,
+  };*/
+
+  function getPersionES6(name, age, height) {
+    return{
+      name: name,
+      age: age,
+      height: height
+    }
+  }
+
+  console.log(getPersionES6("HuXn", 12, 200))
+
+  let getPersion = (name, age, height) =>{
+      name, age, height
+    }
+
+  console.log(getPersionES6("HuXn", 12, 200))
+
+  function jam(a, b = 3){
+    return a * b;
+  }
+  console.log(jam(2, 4))
+  console.log(jam(7))
+
+  // using spread operator with array = ...
+
+  let strNums = ["one","two","three"]
+  let moreStrNums = ["four", "five", "six"]
+  //to join them using the spread operator we have below
+
+  let concat = [...strNums, ...moreStrNums]
+
+  console.log(concat)
+
+  let people = ["Josh","Sam", "Kumar"]
+  let morePeople = ["Faith", ...people, "Williams"]
+  console.log(morePeople)
+
+
+  //using the rest operator 
