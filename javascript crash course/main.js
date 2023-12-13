@@ -534,3 +534,36 @@ const lib = {
 
 
   //using the rest operator 
+
+  const user = {
+    name: "Jen",
+    age:22
+  }
+
+  const clonedUser = {...user}
+  console.log(clonedUser)
+
+  function personic (...hobbies){
+    console.log(hobbies)
+  }
+
+  personic("singing", "coding", "Jumping", "cycling", "hangingout")
+
+//Destructuring allows us to destructure data-arrays objects or functions...
+
+const colors = ["red", "green", "blue", "yellow", "orange"]
+const [color1, color2, color3] = colors;
+console.log(color1, color2, color3)
+
+
+const beast ={
+  names: "Moses John",
+  age: 12,
+  gender: "male",
+  country: "Guyana"
+}
+
+const {names, age, country} = beast
+console.log(name)
+console.log(age)
+console.log(country)
